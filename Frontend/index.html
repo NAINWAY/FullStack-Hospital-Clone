@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"><i class="ri-hospital-line"></i></div>
+                <span>MedicaCare</span>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#departments">Departments</a>
+                <a href="#appointment">Appointment</a>
+                <a href="#contact">Contact</a>
+                <a class="btn btn-ghost" href="#faq">FAQ</a>
+                <a class="btn btn-primary" href="#appointment"><i class="ri-calendar-check-line"></i> Book Now</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="ri-menu-3-line"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow" data-reveal><i class="ri-shield-check-line"></i> ISO Certified Care</span>
+                    <h1 data-reveal style="transition-delay:.05s">World‑Class Healthcare with a Human Touch</h1>
+                    <p class="lead" data-reveal style="transition-delay:.1s">24/7 emergency, advanced diagnostics, and
+                        compassionate specialists. Your health is our highest priority.</p>
+                    <div class="cta" data-reveal style="transition-delay:.15s">
+                        <a href="#appointment" class="btn btn-primary"><i class="ri-stethoscope-line"></i> Make
+                            Appointment</a>
+                        <a href="#services" class="btn btn-ghost"><i class="ri-information-line"></i> Explore
+                            Services</a>
+                    </div>
+                    <div class="stats" data-reveal style="transition-delay:.2s">
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Expert Doctors</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25k+</h3>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Emergency Care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-reveal>
+                    <div class="grid">
+                        <div class="hero-card">
+                            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop"
+                                alt="MRI machine" />
+                            <div style="padding:10px 6px 0; display:flex; align-items:center; gap:8px; color:#cbd5e1;">
+                                <i class="ri-scan-2-line"></i>
+                                <small>3T MRI | 128‑Slice CT</small>
+                            </div>
+                        </div>
+                        <div class="hero-card">
+                            <img src="https://images.unsplash.com/photo-1584452964155-ef139340f0db?q=80&w=1600&auto=format&fit=crop"
+                                alt="Doctors" />
+                            <div style="padding:10px 6px 0; display:flex; align-items:center; gap:8px; color:#cbd5e1;">
+                                <i class="ri-user-heart-line"></i>
+                                <small>Multidisciplinary Team</small>
+                            </div>
+                        </div>
+                        <div class="hero-card">
+                            <img src="https://images.picxy.com/cache/2019/5/9/c133fcd4095c37e03a8b7f0b8845cea4.jpg"
+                                alt="Ward" />
+                            <div style="padding:10px 6px 0; display:flex; align-items:center; gap:8px; color:#cbd5e1;">
+                                <i class="ri-hearts-line"></i>
+                                <small>ICU & NICU</small>
+                            </div>
+                        </div>
+                        <div class="hero-card">
+                            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1600&auto=format&fit=crop"
+                                alt="Reception" />
+                            <div style="padding:10px 6px 0; display:flex; align-items:center; gap:8px; color:#cbd5e1;">
+                                <i class="ri-hospital-line"></i>
+                                <small>Smart Admissions</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pulse" aria-hidden="true"></div>
+                </div>
+            </div>
+            <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="rgba(42,108,255,.1)"
+                    d="M0,64L48,74.7C96,85,192,107,288,112C384,117,480,107,576,106.7C672,107,768,117,864,112C960,107,1056,85,1152,90.7C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Comprehensive Services</h2>
+                    <p>From preventive checkups to complex surgeries.</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data-reveal>
+                        <div class="icon"><i class="ri-heart-pulse-line"></i></div>
+                        <h3>Cardiology</h3>
+                        <p>ECG, Echo, Angiography & PCI with modern cath labs and 24/7 cardiac care.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.05s">
+                        <div class="icon"><i class="ri-brain-line"></i></div>
+                        <h3>Neurology</h3>
+                        <p>Stroke unit, EEG/EMG, neuro‑rehab and advanced neuro‑imaging.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.1s">
+                        <div class="icon"><i class="ri-surgical-mask-line"></i></div>
+                        <h3>General Surgery</h3>
+                        <p>Laparoscopic & minimally invasive procedures with fast recovery programs.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.15s">
+                        <div class="icon"><i class="ri-microscope-line"></i></div>
+                        <h3>Diagnostics</h3>
+                        <p>In‑house lab, radiology, pharmacy and same‑day reports for most tests.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.2s">
+                        <div class="icon"><i class="ri-wheelchair-line"></i></div>
+                        <h3>Physiotherapy</h3>
+                        <p>Pain management, sports injury rehab, and post‑operative care.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.25s">
+                        <div class="icon"><i class="ri-nurse-line"></i></div>
+                        <h3>24/7 Emergency</h3>
+                        <p>Rapid response, triage, trauma care and fully equipped ambulances.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors -->
+        <section id="doctors">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Meet Our Specialists</h2>
+                    <p>Experienced, empathetic and dedicated to your care.</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data-reveal>
+                        <div class="doctor">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1600&auto=format&fit=crop"
+                                alt="Doctor">
+                            <div>
+                                <h3>Dr. Aisha Kapoor</h3>
+                                <p style="margin:2px 0 10px; color:#cbd5e1">Senior Cardiologist</p>
+                                <span class="badge"><i class="ri-shield-check-line"></i> 15+ yrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.05s">
+                        <div class="doctor">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1600&auto=format&fit=crop"
+                                alt="Doctor">
+                            <div>
+                                <h3>Dr. Vikram Rao</h3>
+                                <p style="margin:2px 0 10px; color:#cbd5e1">Neurosurgeon</p>
+                                <span class="badge"><i class="ri-shield-check-line"></i> 12+ yrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.1s">
+                        <div class="doctor">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1600&auto=format&fit=crop"
+                                alt="Doctor">
+                            <div>
+                                <h3>Dr. Neha Sharma</h3>
+                                <p style="margin:2px 0 10px; color:#cbd5e1">Pediatrician</p>
+                                <span class="badge"><i class="ri-shield-check-line"></i> 9+ yrs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments -->
+        <section id="departments">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Departments</h2>
+                    <p>Focused units for comprehensive treatment.</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data-reveal>
+                        <h3><i class="ri-heart-2-line"></i> Cardiac Sciences</h3>
+                        <p>Non‑invasive & interventional cardiology, heart failure clinic, cardiac surgery.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.05s">
+                        <h3><i class="ri-brain-2-line"></i> Neuro Sciences</h3>
+                        <p>Neuro‑medicine, neuro‑surgery, stroke ICU, epilepsy clinic.</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.1s">
+                        <h3><i class="ri-lungs-line"></i> Pulmonology</h3>
+                        <p>Sleep lab, bronchoscopy suite, COPD & asthma management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment -->
+        <section id="appointment">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Book an Appointment</h2>
+                </div>
+                <div class="form-center">
+                    <form method="post" action="http://localhost:8080/register">
+                        Name :<input type="text" placeholder="enter your name" name="username" />
+                        Email :<input type="email" placeholder="enter your email" name="email" />
+                        Password: <input type="password" placeholder="enter your password" name="password" />
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <!-- <form method="post" action="http://localhost:8080/register">
+                    Name :<input type="text" placeholder="enter your name" name="username" />
+                    Password: <input type="password" placeholder="enter your password" name="password" />
+                    <button>Submit</button>
+                </form> -->
+            </div>
+        </section>
+
+        <!-- Testimonials Marquee -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Patients love us</h2>
+                    <p>Here’s what they say after their treatment.</p>
+                </div>
+                <div class="marquee card">
+                    <div class="marquee-track">
+                        <div class="card quote">
+                            <p>“From ER to discharge — seamless care. Doctors explained everything clearly.”</p>
+                            <small>— Rohan, Angioplasty</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Clean wards, caring nurses, and they really listened to me.”</p>
+                            <small>— Meera, Pediatrics</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Modern equipment and quick reports. Highly recommended!”</p>
+                            <small>— Suresh, Diagnostics</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Physio sessions helped me get back on my feet faster than expected.”</p>
+                            <small>— Farah, Ortho Rehab</small>
+                        </div>
+                        <!-- Duplicate for smooth infinite loop -->
+                        <div class="card quote">
+                            <p>“From ER to discharge — seamless care. Doctors explained everything clearly.”</p>
+                            <small>— Rohan, Angioplasty</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Clean wards, caring nurses, and they really listened to me.”</p>
+                            <small>— Meera, Pediatrics</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Modern equipment and quick reports. Highly recommended!”</p>
+                            <small>— Suresh, Diagnostics</small>
+                        </div>
+                        <div class="card quote">
+                            <p>“Physio sessions helped me get back on my feet faster than expected.”</p>
+                            <small>— Farah, Ortho Rehab</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers about care, billing and visits.</p>
+                </div>
+                <div class="faq" id="faqList">
+                    <div class="faq-item">
+                        <div class="faq-q"><span>Do you accept cashless insurance?</span><i class="ri-add-line"></i>
+                        </div>
+                        <div class="faq-a">Yes, we are empaneled with major TPAs. Please bring your insurance card and
+                            ID at admission.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q"><span>Is emergency available 24/7?</span><i class="ri-add-line"></i></div>
+                        <div class="faq-a">Absolutely. Our emergency department, ICU and ambulance services operate
+                            round the clock.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q"><span>How can I get my reports?</span><i class="ri-add-line"></i></div>
+                        <div class="faq-a">Most reports are delivered digitally to your registered email/phone the same
+                            day.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact & Location</h2>
+                    <p>We’re easy to reach.</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data-reveal>
+                        <h3><i class="ri-map-pin-line"></i> Address</h3>
+                        <p>MedicaCare Hospital, 221B Wellness Ave, New Delhi, 110001</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.05s">
+                        <h3><i class="ri-time-line"></i> Timings</h3>
+                        <p>Out‑patient: Mon–Sat, 9:00–18:00 • Emergency: 24×7</p>
+                    </div>
+                    <div class="card" data-reveal style="transition-delay:.1s">
+                        <h3><i class="ri-phone-line"></i> Phone</h3>
+                        <p>+91 98765 43210 • help@medicare.example</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="brand" style="margin-bottom:10px">
+                    <div class="logo"><i class="ri-hospital-line"></i></div>
+                    <span>MedicaCare</span>
+                </div>
+                <p style="color:var(--muted)">Trusted care with advanced facilities and a caring team. NABH standards
+                    aligned.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#doctors">Doctors</a></p>
+                <p><a href="#appointment">Appointment</a></p>
+                <p><a href="#faq">FAQ</a></p>
+            </div>
+            <div>
+                <h4>Patient Info</h4>
+                <p><a href="#">Insurance & TPA</a></p>
+                <p><a href="#">Visitor Policy</a></p>
+                <p><a href="#">Billing & Payments</a></p>
+            </div>
+            <div>
+                <h4>Follow</h4>
+                <p><i class="ri-facebook-circle-line"></i> /MedicaCare</p>
+                <p><i class="ri-instagram-line"></i> @medica.care</p>
+                <p><i class="ri-twitter-x-line"></i> @medicare_hosp</p>
+            </div>
+        </div>
+        <div class="container" style="margin-top:24px; color:var(--muted); font-size: 13px;">© <span id="year"></span>
+            MedicaCare Hospital. All rights reserved.</div>
+    </footer>
+
+    <div class="toast" id="toast"><i class="ri-check-line"></i><span id="toastMsg">Appointment booked!</span></div>
+
+
+    <!-- http://localhost:8080/register -->
+    <!-- <form method="post" action="http://localhost:8080/register">
+        <input type="text" placeholder="enter your name" name="username" />
+        <input type="password" placeholder="enter your password" name="password" />
+        <button>Submit</button>
+    </form> -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
